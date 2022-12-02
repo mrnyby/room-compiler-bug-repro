@@ -29,6 +29,8 @@ interface BaseDao<T : AppEntity> {
 
     fun thisWorksToo(entity: T) = emptyList<T>()
 
+    fun thisWorksTooAlso(entities: List<Any>) = emptyList<T>()
+
     fun thisBreaks(entities: List<T>) = emptyList<T>()
 }
 
